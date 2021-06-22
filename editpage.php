@@ -82,7 +82,7 @@ else
                     </li>
                     <li>
                         <label for="content">作品簡介:</label>
-                        <textarea name="content" id="content"><?php echo $content; ?></textarea>
+                        <textarea name="content" id="content" rows="6" cols="40"><?php echo $content; ?></textarea>
                     </li>
                     <li>
                         <label for="link">作品網址連結:</label> 
