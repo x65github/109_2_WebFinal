@@ -8,13 +8,14 @@
 
     if (isset($_POST['submit']))
     {
+        $writerID = $_SESSION['userid'];        
         $menulabel = $_POST['menulabel'];
         $content = $_POST['content'];
         $link = $_POST['link'];
-        $query = "INSERT INTO pages (menulabel, content, link) VALUES (?, ?, ?)";
+        $query = "INSERT INTO pages (writerID, menulabel, content, link) VALUES (?, ?, ?, ?)";
 
         $statement = $databaseConnection->prepare($query);
-        $statement->bind_param('sss', $menulabel, $content, $link);
+        $statement->bind_param('ssss',$writerID , $menulabel, $content, $link);
         $statement->execute();
         $statement->store_result();
 
