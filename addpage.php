@@ -41,15 +41,15 @@
             <legend>新增作品頁面</legend>
             <ol>
                 <li>
-                    <label for="menulabel">作品名稱:</label> 
+                    <label for="menulabel">作品名稱：</label> 
                     <input type="text" name="menulabel" value="" id="menulabel" />
                 </li>
                 <li>
-                    <label for="content">作品簡介:</label>
+                    <label for="content">作品簡介：</label>
                     <textarea name="content" id="content"></textarea>
                 </li>
                 <li>
-                    <label for="link">作品網址連結:</label> 
+                    <label for="link">作品網址連結：</label> 
                     <input type="text" name="link" value="" id="link" />
                 </li>
             </ol>
